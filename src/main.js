@@ -9,7 +9,7 @@ new Vue({
 
 let formData = new FormData;
 
-fetch('https://31.31.192.52/')
+fetch('/optovikam/')
 .then(response => response.text())
 .then(html => {
 	let matches = html.match(/'bitrix_sessid':'\w+'/)
